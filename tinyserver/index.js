@@ -7,6 +7,7 @@ if (cluster.isMaster) {
   cluster.fork();
   cluster.fork();
   cluster.fork();
+  
 } else {
   // I'm a child, I'm going to act like a server and do nothing else
   const express = require("express");
